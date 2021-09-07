@@ -4,10 +4,7 @@ const Search = (props) => {
   return (
     <div className="ui search">
       <div className="ui icon input">
-        <input
-          className="prompt"
-          onChange={(event) => props.searchSubmit(event)}
-        />
+        <input className="prompt" onKeyPress={props.searchSubmit} />
         <i className="search icon" />
       </div>
     </div>
